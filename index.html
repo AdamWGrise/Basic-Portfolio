@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Adam G's Home Page</title>
@@ -7,26 +8,50 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="#"></script>
 </head>
+<!-- The main div containing the body and everything should be 960px wide.
+
+BONUS: Make your pages more sophisticated by adding style to text links, to image links, and to buttons for when a user hovers their cursor over them. A CSS hover tutorial can be found here: http://www.codeitpretty.com/2013/06/how-to-use-css-hover-effects.html
+
+You can use Adobe Kuler (https://color.adobe.com/create/color-wheel/) to find colors that match the theme (in this case, the primary color is Teal #4aaaa5).
+
+Make a "sticky footer." You will notice the dark grey footer will always rest just below the content. This is fine whenever your site has enough content to push it down past the height of most monitors. But if there isn't much content in the body, the footer could rest in the middle of the page:
+
+-Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. A sticky footer tutorial can be found here: https://css-tricks.com/couple-takes-sticky-footer/
+-Give the Footer the following CSS:
+    border-top: 8px solid #4aaaa5;-->
+
 <body>
-    <div class="header">(Page header, links to About, Portfolio, and Contact)
-        <h1>Adam Grise</h1>
-    </div>
-    <div class="mainbg">
-        (Full width div containing background)
-        <div class="maincontent">
-            (Narrower div with light background and About content)
-            <h2>About Me</h2>
-            <hr>
-            (image in upper left here, text wrapping around image; above hr should only stay within this div and have some margin at the ends)
-            <p>
-                My name is Adam. I'm a simple man - I find stuff that's fun, then do whatever I can to make sure I have time to do that stuff.<br><br>
-                What kinda fun stuff? Well, a little bit of everything! It can include woodworking, reading, biking, board games, video games, making music and movies, playing darts, swimming, axe throwing, or playing with an Etch-A-Sketch. All of these things become more fun when I include other people who also like to do fun stuff. I'll try just about anything if asked.<br><br>
-                I am married and have two kids and a dog. The boy is initially shy, but becomes quite boistrous when he gets comfortable around people, much like me. The girl has gumption, which can really kick me in the behind if I'm not prepared - but I otherwise love it. She gets it from her mom 'cuz that didn't come from me.
-            </p>
+    <div class="topcontainer">
+        <div class="title">
+            <h1>Adam Grise</h1>
+        </div>
+        <div class="links">
+            <a href="index.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
-    <hr>
-
+    <div class="middlecontainer">
+        <h2>About Me</h2><br>
+        <hr>
+        <img class="profilepic" src="assets/images/adamheadshot.png">
+        <p>
+            My name is Adam. I'm a simple man - I find stuff that's fun, then do whatever I can to make sure I have time
+            to do that stuff.<br><br>
+            What kinda fun stuff? Well, a little bit of everything! It can include anything from woodworking to reading,
+            biking to board games,video games to frisbee throwing, making music, solving Rubik's Cubes, playing darts,
+            swimming, axe throwing, or playing with an Etch-A-Sketch. All of these things become more fun when I include
+            other people who also like to do fun stuff. I'll try just
+            about anything if asked.<br><br>
+            I am married and have two kids and a dog. The boy is initially shy, but becomes quite boistrous when he gets
+            comfortable around people, much like me. The girl has gumption, which can really kick me in the behind if
+            I'm not prepared - but I otherwise love it. She gets it from her mom 'cuz that didn't come from me.
+        </p>
+    </div>
 </body>
+<div class="bottomcontainer">
+    © 2019 Adam Grise
+</div>
+
 </html>
