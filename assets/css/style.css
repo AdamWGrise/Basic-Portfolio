@@ -14,6 +14,11 @@ body{
     padding-bottom:58px;
 } /* Body background pattern credited to Michal at toptal.com Subtle Patterns. */
 
+h1 {
+    padding:0;
+    margin:0;
+}
+
 h2 {
     color:#4aaaa5;
     font-family: 'Georgia', Times,'Times New Roman', serif;
@@ -33,9 +38,9 @@ h2 {
 
 .topcontainer {
     padding:0;
-    margin:0 auto auto;
+    margin:0;
     background-color:#ffffff;
-    border-color:#cccccc;
+    border-bottom: 2px solid #999999;
 }
 
 .bottomcontainer {
@@ -59,19 +64,21 @@ h2 {
     margin: 10px;
 }
 
-.title {
+.header {
+    width:960px;
+    margin: 0 auto;
+}
+
+#title {
     background-color:#4aaaa5;
     color:#ffffff;
     font-family: 'Georgia', Times,'Times New Roman', serif;
-    margin:0 auto auto;
-    padding:10px;
-    display:inline-block;
-    width: 250px;
-    text-align:center;
-    position:relative;
+    width: 200px;
+    padding: 20px 30px;
+    float:left;
 }
 
-.links {
-    display:inline-block;
-    position:relative;
+#links {
+    width: 400px;
+    float:right;
 }
