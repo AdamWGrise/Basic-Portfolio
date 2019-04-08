@@ -1,18 +1,17 @@
+/**************************/
 /********  TAGS   *********/
-html {
-    height:100%;
-}
+/**************************/
 
 body{
+    height:100%;
     color:#777777;
     font-family:'Arial','Helvetica Neue', Helvetica, sans-serif;
     background-color:#002200;
     background-image:url("../images/prism.png");
-    margin:0 auto auto;
-    min-height: 100%;
+    margin:0;
     position:relative;
-    padding-bottom:58px;
-} /* Body background pattern credited to Michal at toptal.com Subtle Patterns. */
+}
+/* Body background pattern credited to Michal at toptal.com Subtle Patterns. */
 
 h1 {
     padding:0;
@@ -26,21 +25,80 @@ h2 {
     padding:0 0 5px;
 }
 
-/******** CLASSES *********/
-
-.middlecontainer {
-    width:900px;
-    background-color:#ffffff;
-    border-color:#dddddd;
-    margin:30px auto auto;
-    padding:30px;
+hr {
+    border:0;
+    margin:0 0 25px 0;
+    height:1px;
+    background:#333;
+    background-image:linear-gradient(to right, #89B9B6,#357874,#89B9B6);
 }
+
+textarea {
+    width: 100%;
+    margin:auto auto 10px;
+    color:#357874;
+    border: 1px solid #ccc;
+}
+
+textarea:hover {
+    border-color:#4aaaa5;
+}
+
+/* Thanks for css-tricks.com for the hr decoration. */
+
+        /* Links */
+a {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+a:link {
+    color:#888;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#aaa;
+    text-decoration:none;
+}
+
+a:focus {
+    color:#222;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#4aaaa5;
+    text-decoration: underline;
+}
+
+a:active {
+    color:#000;
+    text-decoration:underline;
+}
+
+/**************************/
+/******** CLASSES *********/
+/**************************/
 
 .topcontainer {
     padding:0;
     margin:0;
     background-color:#ffffff;
     border-bottom: 2px solid #999999;
+    height: 76px;
+}
+
+.middlecontainer {
+    width:896px;
+    background-color:#ffffff;
+    border: #dddddd 2px solid;
+    margin:30px auto 88px;
+    padding:30px;
+    min-height:100%;
 }
 
 .bottomcontainer {
@@ -49,25 +107,78 @@ h2 {
     font-size: 0.7rem;
     border-top: 8px solid #4aaaa5;
     height:50px;
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    display: flex;
-    align-items: center;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
 }
 
 .profilepic {
     width:15%;
     float: left;
-    margin: 10px;
+    margin: 10px 20px auto auto;
 }
 
 .header {
     width:960px;
     margin: 0 auto;
 }
+
+.headerlink {
+    width:100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.portfoliolink {
+    display:inline-block;
+    padding:0;
+    border: 2px solid #142c2a;
+    margin: 10px;
+    width: 270px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.portfoliolink:hover {
+    transform:scale(1.15);
+}
+
+textarea.name, textarea.email {
+    resize: none;
+}
+
+button.submit {
+    background-color:#4aaaa5;
+    border: 4px solid #fff;
+    color:#fff;
+    padding: 12px 26px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+}
+
+button.submit:hover {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border: 4px solid #357874;
+}
+
+button.submit:active {
+    transition:none;
+    border: 4px solid #142c2a;
+    background-color: #307470;
+}
+
+/***************/
+/***** IDs *****/
+/***************/
 
 #title {
     background-color:#4aaaa5;
@@ -76,9 +187,12 @@ h2 {
     width: 200px;
     padding: 20px 30px;
     float:left;
+    text-align: center;
 }
 
 #links {
-    width: 400px;
-    float:right;
+    width:100%;
+    text-align:right;
+    padding: 33px 0 0 20px;
+    color:#89B9B6;
 }

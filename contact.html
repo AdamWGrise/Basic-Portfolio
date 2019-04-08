@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Contact Adam</title>
+    <title>Contact - Adam G</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="#"></script>
@@ -11,18 +11,42 @@
 
 <body>
     <div class="topcontainer">
-        <div class="title">
-            <h1>Adam Grise</h1>
-        </div>
-        <div class="links">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+        <div class="header">
+            <div id="title">
+                <h1>Adam Grise</h1>
+            </div>
+            <div id="links">
+                <div class="headerlink">
+                    <a href="index.html">About</a>
+                </div>
+                |
+                <div class="headerlink">
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+                |
+                <div class="headerlink">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </div>
 
-</body>
-    <div class="bottomcontainer">
-        © 2019 Adam Grise
+    <div class="middlecontainer">
+        <h2>Contact</h2><br>
+        <hr>
+        <label for="name">Name</label><br>
+        <textarea class="name" placeholder="Doesn't have to be your real name!" name="name" rows="1"></textarea><br>
+        <label for="email">Email</label><br>
+        <textarea class="email" placeholder="This kinda has to be a real email, though; e.g., adam@gmail.com"
+            name="name" rows="1"></textarea><br>
+        <label for="message">Message</label><br>
+        <textarea class="message" placeholder="Place your message here." name="name" rows="10"></textarea><br>
+        <button onclick="location.href='index.html'" type="submit" class="submit" name="contactsubmit"
+            type="button">Submit</button>
     </div>
+</body>
+<div class="bottomcontainer">
+    <p>© 2019 Adam Grise</p>
+</div>
+
 </html>
