@@ -1,0 +1,11 @@
+-Try to get the footer to be at the bottom of the window, but then push it off-screen when scrolling is on the page - rather than just being statically at the bottom of the window all the time.
+
+-Double check specs & requirements, and make sure everything is met.
+
+-Look at the Contact page and see if there's a 'nicer' way to present it; better font selection, nicer boxes, etc. The submit button is a little messy looking with the border and the element outline when it's the active element on the page; maybe change the border a bit, also see if I can somehow change the element outline.
+
+-Stuff shifts slightly to the left on pages where there is a scroll bar taking up some of the window space (contact and portfolio on smaller screens); see if this can be prevented.
+
+-The transition on hovering over links in the title bar works just fine for the text color fade - but not for the underlining text decoration. See if the underline can also be part of the transition.
+
+-Think if there's any other fun content to be added to the About or Portfolio screen.
