@@ -9,3 +9,4 @@
 -The transition on hovering over links in the title bar works just fine for the text color fade - but not for the underlining text decoration. See if the underline can also be part of the transition.
 
 -Think if there's any other fun content to be added to the About or Portfolio screen.
+---4/9: Patent link added!
