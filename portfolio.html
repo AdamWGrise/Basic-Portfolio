@@ -4,51 +4,55 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio - Adam G</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="#"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="topcontainer">
-        <div class="header">
+    <header class="header">
+        <div class="header-content">
             <a id="title" href="index.html">
                 <h1>Adam Grise</h1>
             </a>
-            <div id="links">
-                <div class="headerlink">
+            <div id="nav-section">
+                <div class="nav-link">
                     <a href="index.html">About</a>
                 </div>
                 |
-                <div class="headerlink">
+                <div class="nav-link">
                     <a href="portfolio.html">Portfolio</a>
                 </div>
                 |
-                <div class="headerlink">
+                <div class="nav-link">
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="middlecontainer">
-        <h2>Portfolio</h2><br>
-        <hr>
-        <a href="https://youtu.be/2dnqTsx4d7E" target="_blank"><img class="portfoliolink"
+    <section class="main-content">
+        <div class="main-content-label">
+            <h2>Portfolio</h2>
+            <div class="better-hr"></div>
+        </div>
+        <a href="https://youtu.be/2dnqTsx4d7E" target="_blank"><img class="portfolio-link"
                 src="assets/images/portfolio-thumb-mpc.png" alt="YouTube - Adam's Mario Paint Videos"></a>
-        <a href="https://youtu.be/tL8dV_kY8rQ" target="_blank"><img class="portfoliolink"
+        <a href="https://youtu.be/tL8dV_kY8rQ" target="_blank"><img class="portfolio-link"
                 src="assets/images/portfolio-thumb-tutorials.png" alt="Adam's Video Tutorial Sample"></a>
-        <a href="https://github.com/AdamWGrise" target="_blank"><img class="portfoliolink"
+        <a href="https://github.com/AdamWGrise" target="_blank"><img class="portfolio-link"
                 src="assets/images/portfolio-thumb-github.png" alt="Adam's GitHub Profile"></a>
-        <a href="https://www.twitch.tv/adamapple" target="_blank"><img class="portfoliolink"
+        <a href="https://www.twitch.tv/adamapple" target="_blank"><img class="portfolio-link"
                 src="assets/images/portfolio-thumb-twitch.png" alt="Adam's Twitch Channel"></a>
-        <a href="https://patents.google.com/patent/US10114609B2/en" target="_blank"><img class="portfoliolink"
-                src="assets/images/portfolio-thumb-patent.png" alt="Patent - Computing interface for users with disabilities"></a>
-    </div>
+        <a href="https://patents.google.com/patent/US10114609B2/en" target="_blank"><img class="portfolio-link"
+                src="assets/images/portfolio-thumb-patent.png"
+                alt="Patent - Computing interface for users with disabilities"></a>
+    </section>
+
     <!-- Note to self for thumbnail text: With original portfolio-thumb-maker.pdn at 1440x1080; invert white text, gaussian blur at radius 8, then 4 dupes and merges. Font at 108. -->
+
+    <footer class="footer">
+        <p>© 2019 Adam Grise</p>
+    </footer>
 </body>
-<div class="bottomcontainer">
-    <p>© 2019 Adam Grise</p>
-</div>
 
 </html>

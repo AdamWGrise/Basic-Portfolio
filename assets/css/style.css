@@ -13,78 +13,80 @@ body{
 }
 /* Body background pattern credited to Michal at toptal.com Subtle Patterns. */
 
+/* I don't know the best way to take care of properties on things where I have like a Title div and an h1 inside it; better to place the properties on the h1 or the Title div? I tend to put the font-size and family stuff in the header tags, and everything else in the divs. *shrug*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
 h1 {
-    padding:0;
-    margin:0;
+    font-size: 32px;
 }
 
 h2 {
-    color:#4aaaa5;
-    font-family: 'Georgia', Times,'Times New Roman', serif;
-    margin:0 auto auto;
-    padding:0 0 5px;
+    font-size: 24px;
 }
 
-hr {
-    border:0;
-    margin:0 0 25px 0;
-    height:1px;
-    background:#333;
-    background-image:linear-gradient(to right, #89B9B6,#357874,#89B9B6);
-}
-
+/* Contact form fields */
 textarea {
-    width: 100%;
-    margin:auto auto 10px;
+    width: 99%;
+    margin:4px 0 10px;
     color:#357874;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    transition:0.25s;
 }
 
 textarea:hover {
     border-color:#4aaaa5;
 }
 
-/* Thanks for css-tricks.com for the hr decoration. */
+/* Disallow changing the size of the contact boxes... */
+textarea.name, textarea.email {
+    resize: none;
+}
 
-        /* Links */
+/* Links; <3 transitions */
 a {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    transition:.3s;
+    display:inline-block;
 }
 
-a:link {
+a:link, a:visited {
     color:#888;
-    text-decoration:none;
-}
-
-a:visited {
-    color:#888;
-    text-decoration:none;
-}
-
-a:focus {
-    color:#222;
     text-decoration:none;
 }
 
 a:hover {
     color:#4aaaa5;
-    text-decoration: underline;
+}
+
+a:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #4aaaa5;
+    position: relative;
+    transition:.3s;
+    bottom:31px;
+}
+
+a:hover:after {
+    width:100%;
 }
 
 a:active {
     color:#000;
-    text-decoration:underline;
 }
 
 /**************************/
 /******** CLASSES *********/
 /**************************/
 
-.topcontainer {
+/* .... HEADER CLASSES .... */
+
+.header {
     padding:0;
     margin:0;
     background-color:#ffffff;
@@ -92,7 +94,22 @@ a:active {
     height: 76px;
 }
 
-.middlecontainer {
+.header-content {
+    width:960px;
+    margin: 0 auto;
+    padding: 0;
+    height:76px;
+}
+
+.nav-link {
+    width:100px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* .... MAIN CONTENT CLASSES .... */
+
+.main-content {
     width:896px;
     background-color:#ffffff;
     border: #dddddd 2px solid;
@@ -101,57 +118,39 @@ a:active {
     min-height:100%;
 }
 
-.bottomcontainer {
-    background-color:#666666;
-    color: #bbbbbb;
-    font-size: 0.7rem;
-    border-top: 8px solid #4aaaa5;
-    height:50px;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom:0;
-    left:0;
+.main-content-label {
+    color:#4aaaa5;
 }
 
-.profilepic {
-    width:15%;
+/* Thanks for css-tricks.com for the inspiration for the hr decoration. But then Haydn told us hrs suck, so I made this one instead. It doesn't deal with the border on an existing div - it's just its own div so I can set its width and do other fun stuff with it. Gradients are easier to do without having to use webkits and stuff. */
+.better-hr {
+    margin:10px 0;
+    height:2px;
+    width:100%;
+    background-image:linear-gradient(to right,#89B9B6,#073a35,#89B9B6);;
+}
+
+.profile-pic {
+    width: 15%;
     float: left;
-    margin: 10px 20px auto auto;
+    margin: 0 10px 3px 0;
 }
 
-.header {
-    width:960px;
-    margin: 0 auto;
-}
-
-.headerlink {
-    width:100px;
-    display: inline-block;
-    text-align: center;
-}
-
-.portfoliolink {
+.portfolio-link {
     display:inline-block;
     padding:0;
     border: 2px solid #142c2a;
     margin: 10px;
     width: 270px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition:.5s;
 }
 
-.portfoliolink:hover {
+/* Love these transitions */
+.portfolio-link:hover {
     transform:scale(1.15);
 }
 
-textarea.name, textarea.email {
-    resize: none;
-}
-
+/* That Submit button though */
 button.submit {
     background-color:#4aaaa5;
     border: 4px solid #fff;
@@ -162,18 +161,30 @@ button.submit {
 }
 
 button.submit:hover {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-    border: 4px solid #357874;
+    transition:.25s;
+    border: 4px solid #439792;
 }
 
 button.submit:active {
     transition:none;
-    border: 4px solid #142c2a;
-    background-color: #307470;
+    border: 4px solid #2c615c;
+    background-color: #3d9690;
+}
+
+/* .... FOOTER CLASSES .... */
+
+.footer {
+    background-color:#666666;
+    color: #bbbbbb;
+    font-size: 0.7rem;
+    border-top: 8px solid #4aaaa5;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
 }
 
 /***************/
@@ -183,17 +194,27 @@ button.submit:active {
 #title {
     background-color:#4aaaa5;
     color:#ffffff;
-    font-family: 'Georgia', Times,'Times New Roman', serif;
-    width: 200px;
-    padding: 20px 30px;
-    float:left;
+    min-width: 200px;
+    width: 30%;
+    height: 76px;
     text-align: center;
-    text-decoration:none;
+    line-height: 76px;
+    display:inline-block;
+    transition:none;
+}
+    
+#title:hover:after {
+    width:0%; /* Prevent the underlining for the title link */
 }
 
-#links {
-    width:100%;
+#nav-section {
+    min-width:330px;
+    width:69%;
+    height:76px;
+    line-height:76px;
     text-align:right;
-    padding: 33px 0 0 20px;
     color:#89B9B6;
+    display:inline-block;
+    position:relative;
+    left:25px;
 }

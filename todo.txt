@@ -1,18 +1,24 @@
 -Try to get the footer to be at the bottom of the window, but then push it off-screen when scrolling is on the page - rather than just being statically at the bottom of the window all the time.
 
 -Double check specs & requirements, and make sure everything is met.
+---4/11: Looks good - actually header fonts were wrong, so I fixed those. Unsure what was wrong before, actually, that the font was like it shows in the screenshots although the specs specify Georgia for the headers.
 
 -Organize CSS; least to most specific, from top to bottom.
+---4/11: Did a lot of this tonight.
 
 -Possibly add a CSS reset file. One in my repos folder - just need to add to portfolio repo and apply it on pages.
+---4/11: Done.
 
 -Clean up all code; for nodes, classes, and IDs in CSS, for instance, have consistency; all lowercase, no spaces (use hyphens instead), no underscores or other special characters.
+---4/11: Done.
 
 -Look at the Contact page and see if there's a 'nicer' way to present it; better font selection, nicer boxes, etc. The submit button is a little messy looking with the border and the element outline when it's the active element on the page; maybe change the border a bit, also see if I can somehow change the element outline.
+---4/11: I gave the labels a tiny bit more margin and it looks nicer. Also toned down the contrast of the submit button border, as well as the color change upon clicking. I'm satisfied.
 
 -Stuff shifts slightly to the left on pages where there is a scroll bar taking up some of the window space (contact and portfolio on smaller screens); see if this can be prevented.
 
 -The transition on hovering over links in the title bar works just fine for the text color fade - but not for the underlining text decoration. See if the underline can also be part of the transition.
+---4/11: Resolved this by not using text-decoration, but instead :after and :after:hover. An alternative would be to draw a border, but I was having enough of a time dealing with everything in the header misbehaving that I settled on this for now. The links are the whole div as a result, though, so hovering over the white space above and below the links will trigger the transition and allow clicking the link. Good enough for this first project, though.
 
 -Think if there's any other fun content to be added to the About or Portfolio screen.
 ---4/9: Patent link added!
